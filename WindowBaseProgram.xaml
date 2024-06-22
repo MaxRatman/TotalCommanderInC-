@@ -1,0 +1,35 @@
+﻿<Window x:Class="TotalCommanderInC_.WindowBaseProgram"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TotalCommanderInC_"
+        mc:Ignorable="d"
+        Title="WindowBaseProgram" Height="450" Width="800">
+    <Grid x:Name="base">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Background="gray" Grid.Row="0">
+            <Menu x:Name="Файлы" HorizontalAlignment="Left" Height="15"/>
+            <Menu x:Name="Выделение" HorizontalAlignment="Left" Height="15"/>
+            <Menu x:Name="Команды" HorizontalAlignment="Left" Height="15"/>
+            <Menu x:Name="Сеть" HorizontalAlignment="Left" Height="15"/>
+            <Menu x:Name="Вид" HorizontalAlignment="Left" Height="15"/>
+            <Menu x:Name="Конфигурация" HorizontalAlignment="Left" Height="15"/>
+            <Menu x:Name="Запуск" HorizontalAlignment="Left" Height="15"/>
+        </StackPanel>
+        <ToolBar Grid.Row="1" Height="30">
+            
+        </ToolBar>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+        </Grid>
+    </Grid>
+</Window>

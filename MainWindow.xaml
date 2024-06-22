@@ -1,0 +1,56 @@
+﻿<Window x:Class="TotalCommanderInC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TotalCommanderInC"
+        mc:Ignorable="d"
+        Title="Total Commander" Height="270" Width="480" WindowStartupLocation="CenterScreen"  ResizeMode="NoResize" >
+    <Grid x:Name="gridEnterInProgram">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto  "/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Image Width="50" Height="50" Source="{Binding imageFloppyDisk}"/>
+        <Label Content="Total Commander" Grid.Column="1" VerticalAlignment="Top" Grid.Row="0" FontSize="14" FontWeight="ExtraBlack" FontStretch="UltraCondensed" />
+        <Label Grid.Column="2" Grid.Row="0" VerticalAlignment="Top"  HorizontalAlignment="Left" Content="версия" FontSize="14" FontWeight="Black" FontStretch="UltraCondensed"/>
+        <TextBlock x:Name="textBlockVersionGridEnterInProgram" Grid.Column="2" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <Label Content="Copyright 1993-2021 by Christian Ghisler - All Rights Reserved" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="0"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" > 
+                   Вы имеете право опробывать эту условно-бесплатную программу в течение месяца, <LineBreak/>
+                   после чего должны либо зарегистрироваться, либо удалить её. <LineBreak/>
+                   Вы можете свободно распространять это ПО. Подробности вы можете узнать, <LineBreak/>
+                   нажав кнопку "О регистрации"   
+        </TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Text="После регистрации это окно выводиться не будет" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="200" Grid.Row="3" VerticalAlignment="Center" Content="О программе" Margin="5"/>
+        <Button Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="3" HorizontalAlignment="Right" Width="200" VerticalAlignment="Center" Margin="5" Content="О регистрации"/>
+        <Grid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" Margin="10" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock HorizontalAlignment="Center" FontSize="14" FontWeight="Black" VerticalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" Text="Нажмите кнопку для запуска программы"/>
+            <Button x:Name="buttonMastedCardGridEnterInProgram" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Width="50" Height="30" VerticalAlignment="Center"/>
+            <Button x:Name="buttonFirstGridEnterInProgram" Content="1" Command="{Binding CommandButtonFirst}" FontSize="14" FontWeight="SemiBold" Width="80" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button x:Name="buttonSecondGridEnterInProgram" Content="2" FontSize="14" FontWeight="SemiBold" Width="80" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button x:Name="buttonThirdGridEnterInProgram" Content="3" FontSize="14" FontWeight="SemiBold" Width="80" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button x:Name="buttonVisaGridEnterInProgram" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" Width="50" Height="30" VerticalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>
